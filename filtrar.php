@@ -1,22 +1,29 @@
 <?php
+
+session_start();
 include 'dados.php';
+
+$todos_personagens = $personagens;
+if (isset($_SESSION['novos_personagens'])) {
+    $todos_personagens = array_merge($personagens, $_SESSION['novos_personagens']);
+}
 
 $categoriaEscolhida = isset($_GET['categoria']) ? $_GET['categoria'] : null;
 
 $personagensFiltrados = [];
 if ($categoriaEscolhida) {
-    foreach ($personagens as $p) {
+    foreach ($todos_personagens as $p) {
         if (strtolower($p['categoria']) === strtolower($categoriaEscolhida)) {
             $personagensFiltrados[] = $p;
         }
     }
 } else {
-    $personagensFiltrados = $personagens;
+    $personagensFiltrados = $todos_personagens;
 }
 
 $categorias = array_unique(array_map(function ($p) {
     return $p['categoria'];
-}, $personagens));
+}, $todos_personagens));
 sort($categorias);
 ?>
 
@@ -28,17 +35,6 @@ sort($categorias);
     <title>Filtrar por Categoria</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        .footer {
-            text-align: center;
-            background-color: black;
-            padding: 5px;
-            margin-top: auto;
-        }
         .card-img-top {
             height: 250px;
             object-fit: cover;
@@ -85,9 +81,6 @@ sort($categorias);
 
     <a href="index.php" class="btn btn-outline-light mt-4">Voltar ao Catálogo</a>
 </div>
-<footer class="footer">
-        <p>Trabalho feito por Gustavo e Samuel para a aula de PHP</p>
-</footer>
 
 </body>
 </html>
