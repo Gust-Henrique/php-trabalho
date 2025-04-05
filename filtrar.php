@@ -28,6 +28,17 @@ sort($categorias);
     <title>Filtrar por Categoria</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .footer {
+            text-align: center;
+            background-color: black;
+            padding: 5px;
+            margin-top: auto;
+        }
         .card-img-top {
             height: 250px;
             object-fit: cover;
@@ -74,6 +85,9 @@ sort($categorias);
 
     <a href="index.php" class="btn btn-outline-light mt-4">Voltar ao Catálogo</a>
 </div>
+<footer class="footer">
+        <p>Trabalho feito por Gustavo e Samuel para a aula de PHP</p>
+</footer>
 
 </body>
 </html>
