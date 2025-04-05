@@ -11,35 +11,35 @@
         [
             "id" => 2,
             "nome" => "Naruto",
-            "imagem" => "imagens/",
+            "imagem" => "imagens/naruto.jpg",
             "descricao" => "#",
             "categoria" => "Shounen"
         ],
         [
             "id" => 3,
             "nome" => "Ash Ketchum",
-            "imagem" => "#",
+            "imagem" => "imagens/ash.jpg",
             "descricao" => "#",
             "categoria" => "Shounen"
         ],
         [
             "id" => 4,
             "nome" => "Saitama",
-            "imagem" => "#",
+            "imagem" => "imagens/saitama.jpg",
             "descricao" => "#",
             "categoria" => "Shounen"
         ],
         [
             "id" => 5,
             "nome" => "Luffy",
-            "imagem" => "#",
+            "imagem" => "imagens/luffy.jpg",
             "descricao" => "#",
             "categoria" => "Shounen"
         ],
         [
             "id" => 6,
             "nome" => "Satoru Gojo",
-            "imagem" => "#",
+            "imagem" => "imagens/satoru.jpg",
             "descricao" => "#",
             "categoria" => "Shounen"
         ],
