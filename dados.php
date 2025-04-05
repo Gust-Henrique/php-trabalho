@@ -43,7 +43,7 @@
             "descricao" => "Com uma confiança que beira a arrogância (e poder pra bancar), Gojo é o feiticeiro mais poderoso da atualidade. Dono de olhos lendários e técnicas insanas, ele lida com maldições como quem troca piadas. Mas por trás dos óculos, existe um professor disposto a quebrar o sistema com estilo.",
             "categoria" => "Seinen"
 
-        ],
+        ]
     ];
 
 ?>

@@ -18,24 +18,24 @@ include 'dados.php';
     </style>
 </head>
 <body class="bg-dark text-white">
-        <div class="container mt-5">
-            <h1 class="text-center mb-4">Catálogo de Personagens de Anime</h1>
-            <div class="row">
-                <?php foreach ($personagens as $personagens): ?>
-                    <div class="col-md-4 mb-4">
-                        <div class="card bg-secondary text-white">
-                            <img src="<?php echo $personagens ['imagem']; ?>" class="card-img-top" alt="<?php echo $personagens['nome']; ?>">
-                            <div class="card-body">
-                                <h5 class="card-tittle"><?php echo $personagens['nome']; ?></h5>
-                                <p class="card-text"><strong>Categoria:</strong> <?php echo $personagens['categoria']; ?></p>
-                                <a href="detalhes.php?id=<?php echo $personagens['id']; ?>" class="btn btn-light">Ver mais</a>
-                            </div>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Catálogo de Personagens de Anime</h1>
+        <div class="row">
+            <?php foreach ($personagens as $personagem): ?>
+                <div class="col-md-4 mb-4">
+                    <div class="card bg-secondary text-white">
+                        <img src="<?php echo $personagem['imagem']; ?>" class="card-img-top" alt="<?php echo $personagem['nome']; ?>">
+                        <div class="card-body">
+                            <h5 class="card-title"><?php echo $personagem['nome']; ?></h5>
+                            <p class="card-text"><strong>Categoria:</strong> <?php echo $personagem['categoria']; ?></p>
+                            <a href="detalhes.php?id=<?php echo $personagem['id']; ?>" class="btn btn-light">Ver mais</a>
                         </div>
                     </div>
-                <?php endforeach; ?>
-            </div>
-       </div>
-        
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+                </div>
+            <?php endforeach; ?>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
