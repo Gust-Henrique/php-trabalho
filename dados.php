@@ -20,7 +20,7 @@
             "nome" => "Ash Ketchum",
             "imagem" => "imagens/ash.jpg",
             "descricao" => "#",
-            "categoria" => "Shounen"
+            "categoria" => "Kodomo"
         ],
         [
             "id" => 4,
@@ -41,7 +41,7 @@
             "nome" => "Satoru Gojo",
             "imagem" => "imagens/satoru.jpg",
             "descricao" => "#",
-            "categoria" => "Shounen"
+            "categoria" => "Seinen"
         ],
     ];
 
