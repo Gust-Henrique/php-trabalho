@@ -4,34 +4,41 @@
         [
             "id" => 1,
             "nome" => "Goku",
-            "imagem" => "#",
-            "descricao" => "#",
+            "imagem" => "imagens/goku.jpg",
+            "descricao" => "",
             "categoria" => "Shounen"
         ],
         [
             "id" => 2,
-            "nome" => "Goku",
-            "imagem" => "#",
+            "nome" => "Naruto",
+            "imagem" => "imagens/",
             "descricao" => "#",
             "categoria" => "Shounen"
         ],
         [
             "id" => 3,
-            "nome" => "Goku",
+            "nome" => "Ash Ketchum",
             "imagem" => "#",
             "descricao" => "#",
             "categoria" => "Shounen"
         ],
         [
             "id" => 4,
-            "nome" => "Goku",
+            "nome" => "Saitama",
             "imagem" => "#",
             "descricao" => "#",
             "categoria" => "Shounen"
         ],
         [
             "id" => 5,
-            "nome" => "Goku",
+            "nome" => "Luffy",
+            "imagem" => "#",
+            "descricao" => "#",
+            "categoria" => "Shounen"
+        ],
+        [
+            "id" => 6,
+            "nome" => "Satoru Gojo",
             "imagem" => "#",
             "descricao" => "#",
             "categoria" => "Shounen"
