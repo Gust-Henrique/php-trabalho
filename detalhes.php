@@ -1,13 +1,17 @@
 <?php
+session_start();
 
 include 'dados.php';
 
-
 $id = isset($_GET['id']) ? $_GET['id'] : null;
 
+$todos_personagens = $personagens;
+if (isset($_SESSION['novos_personagens'])) {
+    $todos_personagens = array_merge($personagens, $_SESSION['novos_personagens']);
+}
 
 $personagemSelecionado = null;
-foreach ($personagens as $personagem) {
+foreach ($todos_personagens as $personagem) {
     if ($personagem['id'] == $id) {
         $personagemSelecionado = $personagem;
         break;
@@ -31,12 +35,12 @@ if (!$personagemSelecionado) {
 <body class="bg-dark text-white">
 
     <div class="container mt-5">
-        <h1 class="text-center mb-4"><?php echo $personagemSelecionado['nome']; ?></h1>
+        <h1 class="text-center mb-4"><?php echo htmlspecialchars($personagemSelecionado['nome']); ?></h1>
         <div class="card bg-secondary text-white mx-auto" style="max-width: 600px;">
-            <img src="<?php echo $personagemSelecionado['imagem']; ?>" class="card-img-top" alt="<?php echo $personagemSelecionado['nome']; ?>">
+            <img src="<?php echo htmlspecialchars($personagemSelecionado['imagem']); ?>" class="card-img-top" alt="<?php echo htmlspecialchars($personagemSelecionado['nome']); ?>">
             <div class="card-body">
-                <p><strong>Categoria:</strong> <?php echo $personagemSelecionado['categoria']; ?></p>
-                <p><strong>Descrição:</strong> <?php echo $personagemSelecionado['descricao']; ?></p>
+                <p><strong>Categoria:</strong> <?php echo htmlspecialchars($personagemSelecionado['categoria']); ?></p>
+                <p><strong>Descrição:</strong> <?php echo nl2br(htmlspecialchars($personagemSelecionado['descricao'])); ?></p>
                 <a href="index.php" class="btn btn-light">Voltar</a>
             </div>
         </div>
