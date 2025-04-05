@@ -19,8 +19,8 @@ include 'dados.php';
 </head>
 <body class="bg-dark text-white">
     <div class="container mt-5">
-        <h1 class="text-center mb-4">Catálogo de Personagens de Anime</h1>
-        <a href="filtrar.php">Filtrar</a>
+        <h1 class="text-center mb-4">Catálogo de Personagens de Anime</h1>     
+        <a href="filtrar.php" class="btn btn-light">Filtrar</a>
         <div class="row">
             <?php foreach ($personagens as $personagem): ?>
                 <div class="col-md-4 mb-4">
