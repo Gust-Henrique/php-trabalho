@@ -19,14 +19,7 @@
             "id" => 3,
             "nome" => "Ash Ketchum",
             "imagem" => "imagens/ash.jpg",
-
-            "descricao" => "#",
-            "categoria" => "Kodomo"
-
-            "descricao" => "De piada da vila a lenda viva. Naruto é a prova de que com garra, coração e alguns jutsus absurdos, até o garoto mais rejeitado pode se tornar o maior herói da história. Ele carrega mais que o chakra da Raposa — carrega a vontade de nunca desistir de ninguém.",
-            "categoria" => "Shounen"
-
-            "descricao" => "#",
+            "descricao" => "Um treinador de Pokémon que atravessou gerações com o mesmo boné e a mesma vontade de ser o melhor. Pode não ter envelhecido um dia sequer, mas amadureceu em cada jornada. Ash é aquele espírito aventureiro que nunca deixa de sonhar — nem de desafiar a próxima Liga.",
             "categoria" => "Kodomo"
         ],
         [
@@ -47,15 +40,7 @@
             "id" => 6,
             "nome" => "Satoru Gojo",
             "imagem" => "imagens/satoru.jpg",
-<<<<<<< Updated upstream
-            "descricao" => "#",
-            "categoria" => "Seinen"
-=======
-<<<<<<< HEAD
             "descricao" => "Com uma confiança que beira a arrogância (e poder pra bancar), Gojo é o feiticeiro mais poderoso da atualidade. Dono de olhos lendários e técnicas insanas, ele lida com maldições como quem troca piadas. Mas por trás dos óculos, existe um professor disposto a quebrar o sistema com estilo.",
-            "categoria" => "Shounen"
-=======
-            "descricao" => "#",
             "categoria" => "Seinen"
 
         ],
