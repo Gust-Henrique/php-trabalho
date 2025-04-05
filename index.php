@@ -17,6 +17,17 @@ if (isset($_SESSION['novos_personagens'])) {
     <title>Catálogo de Personagens</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .footer {
+            text-align: center;
+            background-color: black;
+            padding: 5px;
+            margin-top: auto;
+        }
         .card-img-top {
             width: 100%;
             height: 250px;
@@ -47,6 +58,10 @@ if (isset($_SESSION['novos_personagens'])) {
             <?php endforeach; ?>
         </div>
     </div>
+
+    <footer class="footer">
+        <p>Trabalho feito por Gustavo e Samuel para a aula de PHP</p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
