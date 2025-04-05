@@ -17,9 +17,9 @@ include 'dados.php';
         }
     </style>
 </head>
-<body class="bg-dark text-white">
+<body>
 
-        <div class="container mt-5">
+        <div class="container">
             <h1></h1>
 
         </div>
