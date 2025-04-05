@@ -27,8 +27,6 @@ if (isset($_SESSION['novos_personagens'])) {
 <body class="bg-dark text-white">
     <div class="container mt-5">
 
-        <h1 class="text-center mb-4">Catálogo de Personagens de Anime</h1>     
-        <a href="filtrar.php" class="btn btn-light">Filtrar</a>
         <h1 class="text-center mb-4">Catálogo de Personagens de Anime</h1>
         <div class="d-flex justify-content-between mb-3">
             <a href="protegido.php" class="btn btn-light">Cadastrar Personagem</a>
