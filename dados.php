@@ -12,29 +12,22 @@
             "id" => 2,
             "nome" => "Naruto",
             "imagem" => "imagens/naruto.jpg",
-            "descricao" => "De piada da vila a lenda viva. Naruto é a prova de que com garra, coração e alguns jutsus absurdos, até o garoto mais rejeitado pode se tornar o maior herói da história. Ele carrega mais que o chakra da Raposa — carrega a vontade de nunca desistir de ninguém.
-
-",
+            "descricao" => "De piada da vila a lenda viva. Naruto é a prova de que com garra, coração e alguns jutsus absurdos, até o garoto mais rejeitado pode se tornar o maior herói da história. Ele carrega mais que o chakra da Raposa — carrega a vontade de nunca desistir de ninguém.",
             "categoria" => "Shounen"
         ],
         [
             "id" => 3,
             "nome" => "Ash Ketchum",
             "imagem" => "imagens/ash.jpg",
-<<<<<<< Updated upstream
-            "descricao" => "#",
-            "categoria" => "Kodomo"
-=======
-<<<<<<< HEAD
-            "descricao" => "De piada da vila a lenda viva. Naruto é a prova de que com garra, coração e alguns jutsus absurdos, até o garoto mais rejeitado pode se tornar o maior herói da história. Ele carrega mais que o chakra da Raposa — carrega a vontade de nunca desistir de ninguém.
 
-",
-            "categoria" => "Shounen"
-=======
             "descricao" => "#",
             "categoria" => "Kodomo"
->>>>>>> 6624c89f10c16ffe21af875be9f983465067eb57
->>>>>>> Stashed changes
+
+            "descricao" => "De piada da vila a lenda viva. Naruto é a prova de que com garra, coração e alguns jutsus absurdos, até o garoto mais rejeitado pode se tornar o maior herói da história. Ele carrega mais que o chakra da Raposa — carrega a vontade de nunca desistir de ninguém.",
+            "categoria" => "Shounen"
+
+            "descricao" => "#",
+            "categoria" => "Kodomo"
         ],
         [
             "id" => 4,
@@ -64,8 +57,7 @@
 =======
             "descricao" => "#",
             "categoria" => "Seinen"
->>>>>>> 6624c89f10c16ffe21af875be9f983465067eb57
->>>>>>> Stashed changes
+
         ],
     ];
 
