@@ -1,5 +1,12 @@
 <?php
+session_start();
 include 'dados.php';
+
+$personagens_finais = $personagens;
+
+if (isset($_SESSION['novos_personagens']) && is_array($_SESSION['novos_personagens'])) {
+    $personagens_finais = array_merge($personagens, $_SESSION['novos_personagens']);
+}
 ?>
 
 <!DOCTYPE html>
@@ -20,6 +27,7 @@ include 'dados.php';
 <body class="bg-dark text-white">
     <div class="container mt-5">
         <h1 class="text-center mb-4">Catálogo de Personagens de Anime</h1>
+<<<<<<< Updated upstream
         <a href="filtrar.php">Filtrar</a>
         <div class="row">
             <?php foreach ($personagens as $personagem): ?>
@@ -30,6 +38,22 @@ include 'dados.php';
                             <h5 class="card-title"><?php echo $personagem['nome']; ?></h5>
                             <p class="card-text"><strong>Categoria:</strong> <?php echo $personagem['categoria']; ?></p>
                             <a href="detalhes.php?id=<?php echo $personagem['id']; ?>" class="btn btn-light">Ver mais</a>
+=======
+
+        <div class="text-end mb-3">
+            <a href="login.php" class="btn btn-outline-light">Login</a>
+        </div>
+
+        <div class="row">
+            <?php foreach ($personagens_finais as $p): ?>
+                <div class="col-md-4 mb-4">
+                    <div class="card bg-secondary text-white">
+                        <img src="<?php echo $p['imagem']; ?>" class="card-img-top" alt="<?php echo $p['nome']; ?>">
+                        <div class="card-body">
+                            <h5 class="card-title"><?php echo $p['nome']; ?></h5>
+                            <p class="card-text"><strong>Categoria:</strong> <?php echo $p['categoria']; ?></p>
+                            <a href="detalhes.php?id=<?php echo $p['id']; ?>" class="btn btn-light">Ver mais</a>
+>>>>>>> Stashed changes
                         </div>
                     </div>
                 </div>
