@@ -52,8 +52,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                 <input type="password" name="senha" id="senha" class="form-control" required>
                             </div>
 
+                            <div class="d-grid mb-3">
+                                <button type="submit" class="btn btn-success">Entrar</button>
+                            </div>
+
                             <div class="d-grid">
-                                <button type="submit" class="btn btn-light">Entrar</button>
+                                <a href="index.php" class="btn btn-primary">Ver catálogo sem Login</a>
                             </div>
                         </form>
                     </div>

@@ -40,20 +40,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>Área Protegida - Cadastro</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        .footer {
-            text-align: center;
-            background-color: black;
-            padding: 5px;
-            margin-top: auto;
-        }
-    </style>
 </head>
 <body class="bg-dark text-white">
 <div class="container mt-5">
@@ -80,11 +68,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <label class="form-label">Categoria</label>
             <input type="text" name="categoria" class="form-control" required>
         </div>
-        <button type="submit" class="btn btn-light">Cadastrar</button>
+        <button type="submit" class="btn btn-success">Cadastrar</button>
     </form>
 
     <div class="mt-4">
-        <a href="index.php" class="btn btn-light">Voltar ao catálogo</a>
+        <a href="index.php" class="btn btn-primary">Voltar ao catálogo</a>
     </div>
 </div>
     <footer class="footer">
