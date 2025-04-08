@@ -1,7 +1,10 @@
 <?php
 
 session_start();
+
 include 'dados.php';
+
+include 'funcoes.php';
 
 $todos_personagens = $personagens;
 if (isset($_SESSION['novos_personagens'])) {
@@ -84,7 +87,7 @@ sort($categorias);
 </div>
 
     <footer class="footer">
-        <p>Trabalho feito por Gustavo e Samuel para a aula de PHP</p>
+        <p><?php mensagemRodape() ?></p>
     </footer>
 </body>
 </html>

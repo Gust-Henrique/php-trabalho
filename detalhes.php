@@ -2,6 +2,7 @@
 session_start();
 
 include 'dados.php';
+include 'funcoes.php';
 
 $id = isset($_GET['id']) ? $_GET['id'] : null;
 
@@ -47,7 +48,7 @@ if (!$personagemSelecionado) {
         </div>
     </div>
     <footer class="footer">
-        <p>Trabalho feito por Gustavo e Samuel para a aula de PHP</p>
+        <p><?php mensagemRodape() ?></p>
     </footer>
 
 </body>

@@ -2,6 +2,7 @@
 session_start();
 
 include 'dados.php';
+include 'funcoes.php';
 
 $todos_personagens = $personagens;
 if (isset($_SESSION['novos_personagens'])) {
@@ -47,7 +48,7 @@ if (isset($_SESSION['novos_personagens'])) {
     </div>
 
     <footer class="footer">
-        <p>Trabalho feito por Gustavo e Samuel para a aula de PHP</p>
+        <p><?php mensagemRodape() ?></p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
