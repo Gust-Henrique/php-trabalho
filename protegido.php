@@ -48,6 +48,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body class="bg-dark text-white">
 <div class="container mt-5">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="index.php">Catálogo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPersonagens" aria-controls="navbarPersonagens" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarPersonagens">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <?php if (isset($_SESSION['logado']) && $_SESSION['logado'] == true): ?>
+                        <li class="nav-item">
+                            <a href="logout.php" class="btn btn-danger">Deslogar</a>
+                        </li>
+                    <?php else: ?>
+                        <li class="nav-item">
+                            <a href="login.php" class="btn btn-light">Login/Novo Cadastro</a>
+                        </li>
+                    <?php endif; ?>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <h2 class="mb-4 text-center">Cadastrar Novo Personagem</h2>
 
     <?php if (isset($mensagem)): ?>
