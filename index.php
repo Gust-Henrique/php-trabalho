@@ -16,24 +16,7 @@ if (isset($_SESSION['novos_personagens'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo de Personagens</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        .footer {
-            text-align: center;
-            background-color: black;
-            padding: 5px;
-            margin-top: auto;
-        }
-        .card-img-top {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-dark text-white">
     <div class="container mt-5">
@@ -41,6 +24,10 @@ if (isset($_SESSION['novos_personagens'])) {
         <h1 class="text-center mb-4">Catálogo de Personagens de Anime</h1>
         <div class="d-flex justify-content-between mb-3">
             <a href="protegido.php" class="btn btn-light">Cadastrar Personagem</a>
+            <?php
+            if (isset($_SESSION['logado']) || $_SESSION['logado'] == true): ?>
+                <a href="logout.php" class="btn btn-danger">Deslogar</>
+            <?php endif; ?>
             <a href="filtrar.php" class="btn btn-outline-light">Filtrar</a>
         </div>
         <div class="row">

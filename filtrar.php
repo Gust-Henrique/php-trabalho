@@ -33,6 +33,7 @@ sort($categorias);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filtrar por Categoria</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         .card-img-top {
@@ -79,8 +80,11 @@ sort($categorias);
         <?php endforeach; ?>
     </div>
 
-    <a href="index.php" class="btn btn-outline-light mt-4">Voltar ao Catálogo</a>
+    <a href="index.php" style="margin-bottom:10px" class="btn btn-outline-light mt-4">Voltar ao Catálogo</a>
 </div>
 
+    <footer class="footer">
+        <p>Trabalho feito por Gustavo e Samuel para a aula de PHP</p>
+    </footer>
 </body>
 </html>
